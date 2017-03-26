@@ -2,7 +2,7 @@ fluidPage(
   titlePanel("Image output"),
 
   fluidRow(
-    column(4, wellPanel(
+    column(4, cardPanel(
       sliderInput("r", "Radius :", min = 0.05, max = 1,
                   value = 0.2, step = 0.05),
       radioButtons("picture", "Picture:",

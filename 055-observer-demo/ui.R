@@ -1,7 +1,7 @@
 fluidPage(
   titlePanel("Observer demo"),
   fluidRow(
-    column(4, wellPanel(
+    column(4, cardPanel(
       sliderInput("n", "N:",
                   min = 10, max = 1000, value = 200, step = 10)
     )),

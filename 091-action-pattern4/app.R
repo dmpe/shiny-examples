@@ -1,4 +1,4 @@
-library(shiny)
+library(shinyV4)
 
 ui <- fluidPage(
   actionButton("runif", "Uniform"),

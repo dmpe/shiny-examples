@@ -1,4 +1,4 @@
-library(shiny)
+library(shinyV4)
 
 # Define UI for random distribution application 
 fluidPage(

@@ -7,7 +7,7 @@ trap '' SIGINT
 
 shiny () {
   echo $i
-  R --quiet --slave -e "shiny::runApp(\"$1\", port=5151, launch.browser=TRUE)"
+  R --quiet --slave -e "shinyV4::runApp(\"$1\", port=5151, launch.browser=TRUE)"
 }
 
 for i in $( ls -d */ ); do

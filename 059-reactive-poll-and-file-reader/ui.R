@@ -7,13 +7,13 @@ fluidPage(
     )
   ),
   fluidRow(
-    column(6, wellPanel(
+    column(6, cardPanel(
       "This side uses a reactiveFileReader, which is monitoring",
       "the log file for changes every 0.5 seconds.",
       verbatimTextOutput("fileReaderText")
     )),
 
-    column(6, wellPanel(
+    column(6, cardPanel(
       "This side uses a reactivePoll, which is monitoring",
       "the log file for changes every 4 seconds.",
       verbatimTextOutput("pollText")

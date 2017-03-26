@@ -1,4 +1,4 @@
-library(shiny)
+library(shinyV4)
 
 # To be called from ui.R
 lineChartOutput <- function(inputId, width="100%", height="400px") {

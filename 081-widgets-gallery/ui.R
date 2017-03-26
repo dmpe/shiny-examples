@@ -28,7 +28,7 @@ fluidPage(
   fluidRow(
     
     column(4,
-      wellPanel(
+      cardPanel(
         h3("Action button"),
         actionButton("action", label = "Action"),
         hr(),
@@ -39,7 +39,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         h3("Single checkbox"),
         checkboxInput("checkbox", label = "Choice A", 
                       value = TRUE),
@@ -51,7 +51,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         checkboxGroupInput("checkGroup", 
           label = h3("Checkbox group"), 
           choices = list("Choice 1" = 1, "Choice 2" = 2, 
@@ -68,7 +68,7 @@ fluidPage(
   fluidRow(
         
     column(4,
-      wellPanel(
+      cardPanel(
         dateInput("date", label = h3("Date input"), value = "2014-01-01"),  
         hr(),
         p("Current Value:", style = "color:#888888;"), 
@@ -78,7 +78,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         dateRangeInput("dates", label = h3("Date range")),
         hr(),
         p("Current Values:", style = "color:#888888;"), 
@@ -88,7 +88,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         fileInput("file", label = h3("File input")),
         hr(),
         p("Current Value:", style = "color:#888888;"), 
@@ -101,7 +101,7 @@ fluidPage(
   fluidRow(
         
     column(4,
-      wellPanel(
+      cardPanel(
         numericInput("num", label = h3("Numeric input"), value = 1),
         hr(),
         p("Current Value:", style = "color:#888888;"), 
@@ -111,7 +111,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         radioButtons("radio", label = h3("Radio buttons"),
           choices = list("Choice 1" = 1, "Choice 2" = 2, "Choice 3" = 3), 
           selected = 1),
@@ -123,7 +123,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         selectInput("select", label = h3("Select box"), 
         choices = list("Choice 1" = 1, "Choice 2" = 2,
                        "Choice 3" = 3), selected = 1),
@@ -138,7 +138,7 @@ fluidPage(
   fluidRow(
     
     column(4,
-      wellPanel(
+      cardPanel(
         sliderInput("slider1", label = h3("Slider"), min = 0, max = 100, 
                     value = 50),
         hr(),
@@ -149,7 +149,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         sliderInput("slider2", label = h3("Slider range"), min = 0, 
                     max = 100, value = c(25, 75)),
         hr(),
@@ -160,7 +160,7 @@ fluidPage(
       )),
     
     column(4,
-      wellPanel(
+      cardPanel(
         textInput("text", label = h3("Text input"), 
                   value = "Enter text..."),
         hr(),

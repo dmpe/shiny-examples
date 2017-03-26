@@ -1,7 +1,7 @@
 ---
 title: "Inline Output in R Markdown Documents"
 author: "Yihui Xie"
-runtime: shiny
+runtime: shinyV4
 output: html_document
 ---
 
@@ -10,7 +10,7 @@ Since **shiny** 0.10.1, you can embed inline output elements. We have added an a
 First we show a normal shiny app, with a select input to change the title of a plot, and a slider to change the size of points:
 
 ```{r}
-library(shiny)
+library(shinyV4)
 sidebarLayout(
   sidebarPanel(
     selectizeInput('main', 'Main title', LETTERS),

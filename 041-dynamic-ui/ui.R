@@ -2,7 +2,7 @@ fluidPage(
   titlePanel("Dynamically generated user interface components"),
   fluidRow(
 
-    column(3, wellPanel(
+    column(3, cardPanel(
       selectInput("input_type", "Input type",
         c("slider", "text", "numeric", "checkbox",
           "checkboxGroup", "radioButtons", "selectInput",
@@ -11,7 +11,7 @@ fluidPage(
       )
     )),
 
-    column(3, wellPanel(
+    column(3, cardPanel(
       # This outputs the dynamic UI component
       uiOutput("ui")
     )),

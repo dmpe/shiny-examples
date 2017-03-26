@@ -151,7 +151,7 @@ shinyApp(
     ),
     fluidRow(
       column(width = 9,
-        wellPanel(
+        cardPanel(
           div(class = "option-group",
             div(class = "option-header", "nearPoints() options"),
             flowLayout(
@@ -164,7 +164,7 @@ shinyApp(
           h4("Points selected by clicking, with nearPoints():"),
           DT::dataTableOutput("plot_clicked_points")
         ),
-        wellPanel(width = 9,
+        cardPanel(width = 9,
           h4("Points selected by brushing, with brushedPoints():"),
           DT::dataTableOutput("plot_brushed_points")
         )

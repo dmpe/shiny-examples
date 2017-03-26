@@ -1,7 +1,7 @@
 fluidPage(
   titlePanel("Changing the values of inputs from the server"),
   fluidRow(
-    column(3, wellPanel(
+    column(3, cardPanel(
       h4("These inputs control the other inputs on the page"),
       textInput("control_label",
                 "This controls some of the labels:",
@@ -11,7 +11,7 @@ fluidPage(
                   min = 1, max = 20, value = 15)
     )),
 
-    column(3, wellPanel(
+    column(3, cardPanel(
       textInput("inText",  "Text input:", value = "start text"),
 
       numericInput("inNumber", "Number input:",
@@ -32,7 +32,7 @@ fluidPage(
     )),
 
     column(3,
-      wellPanel(
+      cardPanel(
         checkboxInput("inCheckbox", "Checkbox input",
                       value = FALSE),
 

@@ -1,7 +1,7 @@
 fluidPage(
   titlePanel("isolate example"),
   fluidRow(
-    column(4, wellPanel(
+    column(4, cardPanel(
       sliderInput("n", "n (isolated):",
                   min = 10, max = 1000, value = 200, step = 10),
 

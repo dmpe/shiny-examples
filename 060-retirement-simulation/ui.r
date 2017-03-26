@@ -1,7 +1,7 @@
-library(shiny)
+library(shinyV4)
 
 renderInputs <- function(prefix) {
-  wellPanel(
+  cardPanel(
     fluidRow(
       column(6,
         sliderInput(paste0(prefix, "_", "n_obs"), "Number of observations (in Years):", min = 0, max = 40, value = 20),

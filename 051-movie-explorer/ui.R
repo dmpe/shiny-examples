@@ -12,7 +12,7 @@ fluidPage(
   titlePanel("Movie explorer"),
   fluidRow(
     column(3,
-      wellPanel(
+      cardPanel(
         h4("Filter"),
         sliderInput("reviews", "Minimum number of reviews on Rotten Tomatoes",
           10, 300, 80, step = 10),
@@ -30,7 +30,7 @@ fluidPage(
         textInput("director", "Director name contains (e.g., Miyazaki)"),
         textInput("cast", "Cast names contains (e.g. Tom Hanks)")
       ),
-      wellPanel(
+      cardPanel(
         selectInput("xvar", "X-axis variable", axis_vars, selected = "Meter"),
         selectInput("yvar", "Y-axis variable", axis_vars, selected = "Reviews"),
         tags$small(paste0(
@@ -43,7 +43,7 @@ fluidPage(
     ),
     column(9,
       ggvisOutput("plot1"),
-      wellPanel(
+      cardPanel(
         span("Number of movies selected:",
           textOutput("n_movies")
         )

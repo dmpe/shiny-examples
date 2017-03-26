@@ -1,5 +1,5 @@
 # Load packages -----------------------------------------------------
-library(shiny)
+library(shinyV4)
 library(highcharter)
 library(dplyr)
 library(tidyr)

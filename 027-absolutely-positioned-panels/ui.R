@@ -5,7 +5,7 @@ fluidPage(style="padding-top: 80px;",
   absolutePanel(
     bottom = 20, right = 20, width = 300,
     draggable = TRUE,
-    wellPanel(
+    cardPanel(
       HTML(markdownToHTML(fragment.only=TRUE, text=c(
 "This is an absolutePanel that uses `bottom` and `right` attributes.
 

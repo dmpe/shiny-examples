@@ -1,4 +1,4 @@
-library(shiny)
+library(shinyV4)
 
 function(input, output) {
   output$ex_out <- renderPrint({

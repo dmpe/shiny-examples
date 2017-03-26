@@ -12,7 +12,7 @@ ui <- fluidPage(
   ),
 
   fluidRow(
-    column(width = 4, wellPanel(
+    column(width = 4, cardPanel(
       radioButtons("plot_type", "Plot type",
         c("base", "ggplot2")
       )

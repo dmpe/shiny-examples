@@ -1,4 +1,4 @@
-library(shiny)
+library(shinyV4)
 
 ui <- basicPage(
   plotOutput("plot1", click = "plot_click"),

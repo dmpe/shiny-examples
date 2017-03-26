@@ -1,4 +1,4 @@
-library(shiny)
+library(shinyV4)
 
 # Define server logic for slider examples
 function(input, output) {

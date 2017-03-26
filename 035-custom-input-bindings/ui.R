@@ -4,11 +4,11 @@ fluidPage(
   titlePanel("Custom input example"),
 
   fluidRow(
-    column(4, wellPanel(
+    column(4, cardPanel(
       urlInput("my_url", "URL: ", "http://www.r-project.org/"),
       actionButton("reset", "Reset URL")
     )),
-    column(8, wellPanel(
+    column(8, cardPanel(
       verbatimTextOutput("urlText")
     ))
   )

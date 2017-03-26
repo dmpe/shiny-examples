@@ -2,7 +2,7 @@ fluidPage(
   titlePanel("sendCustomMessage example"),
 
   fluidRow(
-    column(4, wellPanel(
+    column(4, cardPanel(
       sliderInput("controller", "Controller:",
         min = 1, max = 20, value = 15),
       
