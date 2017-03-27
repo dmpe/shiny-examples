@@ -1,6 +1,7 @@
 library(markdown)
+library(shinyV4)
 
-navbarPage("Navbar!",
+navbarPage("Navbar!",position = "static-top",
   tabPanel("Plot",
     sidebarLayout(
       sidebarPanel(

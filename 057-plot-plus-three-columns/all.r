@@ -44,7 +44,7 @@ ui <- fluidPage(title = "Diamonds Explorer",
                 ))
 ser  <- function(input, output) {
   dataset <- reactive({
-    diamonds[sample(nrow(diamonds), input$sampleSize), ]
+    diamonds[sample(nrow(diamonds), input$sampleSize),]
   })
 
   output$plot <- renderPlot({
