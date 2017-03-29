@@ -84,7 +84,7 @@ function(input, output) {
     style <- isolate(input$style)
 
     # Create a Progress object
-    progress <- shiny::Progress$new(style = style)
+    progress <- shinyV4::Progress$new(style = style)
     progress$set(message = "Computing data", value = 0)
     # Close the progress when this reactive exits (even if there's an error)
     on.exit(progress$close())
