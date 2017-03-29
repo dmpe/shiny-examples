@@ -1,5 +1,5 @@
 library(png) # For writePNG function
-library(shinyV4)
+library(shiny)
 
 # Return a matrix with 2d guassian distribution
 gauss2d <- function(x, y, r = 0.15) {

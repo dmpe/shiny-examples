@@ -1,6 +1,6 @@
 library(ggplot2)
 library(datasets)
-library(shinyV4)
+library(shiny)
 
 dataset <- diamonds
 

@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 
 renderInputs <- function(prefix) {
   cardPanel(

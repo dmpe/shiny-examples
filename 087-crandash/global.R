@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 library(shinySignals)
 library(dplyr)
 library(shinydashboard)

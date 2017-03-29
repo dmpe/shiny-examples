@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 library(mclust)
 
 function(input, output, session) {

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-OLD="library(shinyV4)"
-NEW="library(shinyV4)"
+OLD="library(shiny)"
+NEW="library(shiny)"
 DPATH="//home/jm/Documents/shiny-examples/"
 BPATH="//home/jm/Documents/shiny-examples/backup/"
 TFILE="/tmp/out.tmp.$$"
@@ -18,4 +18,4 @@ done
 /bin/rm $TFILE
 
 # https://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
-sudo find . -type f -exec sed -i 's/library(shiny)/library(shinyV4)/g' {} +
+sudo find . -type f -exec sed -i 's/library(shiny)/library(shiny)/g' {} +

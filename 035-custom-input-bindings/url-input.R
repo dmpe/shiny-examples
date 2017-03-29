@@ -1,17 +1,17 @@
-library(shinyV4)
+library(shiny)
 # This function generates the client-side HTML for a URL input
 urlInput <- function(inputId, label, value = "") {
   tagList(
     # This makes web page load the JS file in the HTML head.
     # The call to singleton ensures it's only included once
     # in a page.
-    shinyV4::singleton(
-      shinyV4::tags$head(
-        shinyV4::tags$script(src = "url-input-binding.js")
+    shiny::singleton(
+      shiny::tags$head(
+        shiny::tags$script(src = "url-input-binding.js")
       )
     ),
-    shinyV4::tags$label(label, `for` = inputId),
-    shinyV4::tags$input(id = inputId, type = "url", value = value)
+    shiny::tags$label(label, `for` = inputId),
+    shiny::tags$input(id = inputId, type = "url", value = value)
   )
 }
 

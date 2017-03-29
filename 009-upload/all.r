@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 
 ser <- function(input, output) {
   output$contents <- renderTable({

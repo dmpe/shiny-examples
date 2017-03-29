@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 
 # Create a bootstrap fluid layout
 fluidPage(

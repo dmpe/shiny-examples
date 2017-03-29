@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 
 app <- shinyApp(qwed <- function(input, output) {
   data <- reactive({

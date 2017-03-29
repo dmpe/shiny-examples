@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 
 ui <- fluidPage(
   actionButton("go", "Go"),

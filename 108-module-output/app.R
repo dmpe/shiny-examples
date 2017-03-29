@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 
 source("linked_scatter.R")
 

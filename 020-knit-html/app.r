@@ -1,6 +1,6 @@
 library(knitr)
 library(rmarkdown)
-library(shinyV4)
+library(shiny)
 # http://shiny.leg.ufpr.br/daniel/020-knit-html/
 
 

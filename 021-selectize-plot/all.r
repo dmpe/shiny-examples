@@ -1,5 +1,5 @@
 library(maps)
-library(shinyV4)
+library(shiny)
 library(DT)
 
 ui <- fluidPage(
@@ -43,7 +43,7 @@ ser <- function(input, output, session) {
       }, finally = dev.off())
 
       # send the PNG image back in a response
-      shinyV4:::httpResponse(
+      shiny:::httpResponse(
         200, 'image/png', readBin(image, 'raw', file.info(image)[, 'size'])
       )
 

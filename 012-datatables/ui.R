@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 library(ggplot2)  # for the diamonds dataset
 
 fluidPage(

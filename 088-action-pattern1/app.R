@@ -1,4 +1,4 @@
-library(shinyV4)
+library(shiny)
 
 ui <- fluidPage(
   tags$head(tags$script(src = "message-handler.js")),
