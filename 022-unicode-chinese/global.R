@@ -1,4 +1,6 @@
 library(datasets)
+library(curl)
+
 rock2 <- rock
 names(rock2) <- c("面积", "周长", "形状", "渗透性")
 
@@ -11,7 +13,7 @@ if (Sys.info()[['sysname']] == 'Linux' &&
       system('locate wqy-zenhei.ttc') != 0 &&
       !file.exists(font_home('wqy-zenhei.ttc'))) {
   if (!file.exists('wqy-zenhei.ttc'))
-    shiny:::download(
+    curl::curl_download(
       'https://github.com/rstudio/shiny-examples/releases/download/v0.10.1/wqy-zenhei.ttc',
       'wqy-zenhei.ttc'
     )
