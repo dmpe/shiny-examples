@@ -1,5 +1,6 @@
 library(shiny)
 library(ggplot2)  # for the diamonds dataset
+library(DT)
 
 fluidPage(
   title = 'Examples of DataTables',

@@ -1,3 +1,5 @@
+library(rmarkdown)
+
 function(input, output) {
 
   regFormula <- reactive({
