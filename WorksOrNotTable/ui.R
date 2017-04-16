@@ -1,33 +1,28 @@
+# Goals: maek it easier to test
+# Some ideas: display table of original app, comments section
+# store to csv button
 #
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
+library(DT)
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
-  
+
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
-  
-  # Sidebar with a slider input for number of bins 
+  titlePanel("Test Shiny Apps manually"),
+
+  # Sidebar with a slider input for number of bins
   sidebarLayout(
     sidebarPanel(
-       sliderInput("bins",
-                   "Number of bins:",
-                   min = 1,
-                   max = 50,
-                   value = 30)
+      helpText("Click to save comments that you have provided.",
+               "This will save new data in csv for long-term storage."),
+      hr(),
+      actionButton("save", "Save comments")
     ),
-    
+
     # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("distPlot")
+      DT::dataTableOutput('testingMatrix')
     )
   )
 ))
