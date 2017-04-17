@@ -14,8 +14,10 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for number of bins
   sidebarLayout(
     sidebarPanel(
-      helpText("Click to save comments that you have provided.",
-               "This will save new data in csv for long-term storage."),
+      helpText("This app uses modified shiny based on Bootstrap v4",
+               "Click to save comments that you have provided.",
+               "This will save new data in csv for long-term storage.",
+               "(To be used later - waiting on DT functionality)"),
       hr(),
       actionButton("save", "Save comments")
     ),
