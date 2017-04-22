@@ -1,4 +1,5 @@
 library(leaflet)
+library(DT)
 
 # Choices for drop-downs
 vars <- c(
