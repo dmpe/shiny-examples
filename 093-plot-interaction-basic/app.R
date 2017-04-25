@@ -24,7 +24,7 @@ ui <- fluidPage(
         # Equivalent to: click = clickOpts(id = "plot_click")
         click = "plot_click",
         dblclick = dblclickOpts(
-          id = "plot_dblclick"
+          id = "plot_dblclick", delay = 1000
         ),
         hover = hoverOpts(
           id = "plot_hover"
