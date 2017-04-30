@@ -2,6 +2,6 @@ Title: Plot interaction - basic
 Author: RStudio, Inc.
 AuthorUrl: http://www.rstudio.com/
 License: MIT
-DisplayMode: Showcase
+DisplayMode: Display
 Tags: plot-interaction
 Type: Shiny

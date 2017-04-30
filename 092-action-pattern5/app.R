@@ -25,18 +25,22 @@ ui <- fluidPage(
 server <- function(input, output){
   v <- reactiveValues(doPlot = FALSE)
 
+
   observeEvent(input$go, {
     # 0 will be coerced to FALSE
     # 1+ will be coerced to TRUE
     v$doPlot <- input$go
+    print(v$doPlot)
   })
 
   observeEvent(input$tabset, {
     v$doPlot <- FALSE
-  })  
+    print("false" + v$doPlot)
+  })
 
   output$plot <- renderPlot({
     if (v$doPlot == FALSE) return()
+    print("output plot" + v$doPlot)
 
     isolate({
       data <- if (input$tabset == "Uniform") {
@@ -44,7 +48,7 @@ server <- function(input, output){
       } else {
         rnorm(input$normCount, input$normMean, input$normSd)
       }
-      
+
       hist(data)
     })
   })
