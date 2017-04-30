@@ -3,7 +3,7 @@ library(Cairo)   # For nicer ggplot2 output when deployed on Linux
 
 ui <- fluidPage(
   fluidRow(
-    column(width = 4, class = "well",
+    column(width = 4,
       h4("Brush and double-click to zoom"),
       plotOutput("plot1", height = 300,
         dblclick = "plot1_dblclick",
@@ -13,7 +13,7 @@ ui <- fluidPage(
         )
       )
     ),
-    column(width = 8, class = "well",
+    column(width = 8,
       h4("Left plot controls right plot"),
       fluidRow(
         column(width = 6,
