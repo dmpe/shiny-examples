@@ -1,7 +1,7 @@
 myPlotUI <- function(id, label = "My Plot") {
-  ns <- NS(id)
+  ns <<- NS(id)
   tagList(
-    column(4, wellPanel(
+    column(4, cardPanel(
       sliderInput(
         ns("n"),
         "Number of points:",
@@ -32,23 +32,8 @@ myPlotUI <- function(id, label = "My Plot") {
   )
 }
 
-myPlot <- function(input, output, session, deviates) {
-  output$scatterPlot <- renderPlot({
-    x <- rnorm(input$n)
-    y <- rnorm(input$n)
-    plot(x, y)
-  })
-}
-
-server <- function(input, output) {
-  callModule(myPlot, "plot1")
-  callModule(myPlot, "plot2")
-}
-
 ui <- fluidPage(
   titlePanel("Namespaced conditional panels"),
   myPlotUI("plot1", label = "My first plot"),
   myPlotUI("plot2", label = "My second plot")
 )
-
-shinyApp(ui = ui, server = server)
