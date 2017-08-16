@@ -56,4 +56,4 @@ server <- function(input, output) {
 }
 
 # Create Shiny app ----
-shiny::shinyApp(ui = ui, server = server)
+shiny::shinyApp(ui = ui, server = server, options = list(display.mode = "showcase"))
